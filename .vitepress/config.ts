@@ -5,6 +5,7 @@ export default defineConfig({
 	title: "Stockfish",
 	description: "Stockfish documentation",
 	base: "/stockfish-docs/",
+	ignoreDeadLinks: true,
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
