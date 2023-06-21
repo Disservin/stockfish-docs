@@ -7,6 +7,9 @@ export default defineConfig({
 	base: "/stockfish-docs/",
 	ignoreDeadLinks: true,
 	themeConfig: {
+		editLink: {
+			pattern: "https://github.com/Disservin/stockfish-docs/edit/master/:path",
+		},
 		search: {
 			provider: "local",
 		},
