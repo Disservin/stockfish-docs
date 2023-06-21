@@ -7,6 +7,9 @@ export default defineConfig({
 	base: "/stockfish-docs/",
 	ignoreDeadLinks: true,
 	themeConfig: {
+		search: {
+			provider: "local",
+		},
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
 			{ text: "Home", link: "/" },
