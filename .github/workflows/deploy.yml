@@ -21,6 +21,14 @@ jobs:
         with:
           node-version: 16
           cache: npm
+
+      - name: Add outline to Markdown files
+        run: |
+          find Stockfish.wiki -type f -name '*.md' | while read -r file; do
+            echo -e "---\noutline: deep\n---\n$(cat "$file")" > "$file.temp"
+            mv "$file.temp" "$file"
+          done
+
       - run: npm ci
       - name: Build
         run: npm run docs:build

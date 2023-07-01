@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: FAQ
-      link: /pages/stockfish-faq
+      link: /Stockfish.wiki/Stockfish-FAQ
 features:
   - title: Latest Dev Builds
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit

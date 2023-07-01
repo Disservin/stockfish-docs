@@ -4,8 +4,13 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
 	title: "Stockfish",
 	description: "Stockfish documentation",
+
 	base: "/stockfish-docs/",
+
 	ignoreDeadLinks: true,
+
+	lastUpdated: true,
+
 	themeConfig: {
 		editLink: {
 			pattern: "https://github.com/Disservin/stockfish-docs/edit/master/:path",
@@ -16,30 +21,36 @@ export default defineConfig({
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
 			{ text: "Home", link: "/" },
-			{ text: "Docs", link: "/pages/home" },
+			{ text: "Docs", link: "/Stockfish.wiki/Home" },
 		],
 
 		sidebar: [
 			{
 				text: "Home",
 				items: [
-					{ text: "Description", link: "/pages/home" },
-					{ text: "Advanced topics", link: "/pages/advanced-topics" },
-					{ text: "Commands", link: "/pages/commands" },
+					{ text: "Description", link: "/Stockfish.wiki/Home" },
+					{ text: "Advanced topics", link: "/Stockfish.wiki/Advanced-topics" },
+					{ text: "Commands", link: "/Stockfish.wiki/Commands" },
 					{
 						text: "Compiling from source",
-						link: "/pages/compiling-from-source",
+						link: "/Stockfish.wiki/Compiling-from-source",
 					},
-					{ text: "Developers", link: "/pages/developers" },
-					{ text: "Download and Usage", link: "/pages/download-and-usage" },
+					{ text: "Developers", link: "/Stockfish.wiki/Developers" },
+					{
+						text: "Download and Usage",
+						link: "/Stockfish.wiki/Download-and-usage",
+					},
 					{
 						text: "Governance and responsibilities",
-						link: "/pages/governance-and-responsibilities",
+						link: "/Stockfish.wiki/Governance-and-responsibilities",
 					},
-					{ text: "Regression Tests", link: "/pages/regression-tests" },
-					{ text: "Stockfish FAQ", link: "/pages/stockfish-faq" },
-					{ text: "Terminology", link: "/pages/terminology" },
-					{ text: "Useful data", link: "/pages/useful-data" },
+					{
+						text: "Regression Tests",
+						link: "/Stockfish.wiki/Regression-Tests",
+					},
+					{ text: "Stockfish FAQ", link: "/Stockfish.wiki/Stockfish-FAQ" },
+					{ text: "Terminology", link: "/Stockfish.wiki/Terminology" },
+					{ text: "Useful data", link: "/Stockfish.wiki/Useful-data" },
 				],
 			},
 		],
