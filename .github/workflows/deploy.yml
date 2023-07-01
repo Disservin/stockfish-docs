@@ -16,6 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          submodules: true
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
@@ -24,7 +25,7 @@ jobs:
 
       - name: Add outline to Markdown files
         run: |
-          find Stockfish.wiki -type f -name '*.md' | while read -r file; do
+          find pages -type f -name '*.md' | while read -r file; do
             echo -e "---\noutline: deep\n---\n$(cat "$file")" > "$file.temp"
             mv "$file.temp" "$file"
           done

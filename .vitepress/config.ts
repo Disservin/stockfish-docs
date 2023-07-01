@@ -23,36 +23,36 @@ export default defineConfig({
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
 			{ text: "Home", link: "/" },
-			{ text: "Docs", link: "/Stockfish.wiki/Home" },
+			{ text: "Docs", link: "/pages/Home" },
 		],
 
 		sidebar: [
 			{
 				text: "Home",
 				items: [
-					{ text: "Description", link: "/Stockfish.wiki/Home" },
-					{ text: "Advanced topics", link: "/Stockfish.wiki/Advanced-topics" },
-					{ text: "Commands", link: "/Stockfish.wiki/Commands" },
+					{ text: "Description", link: "/pages/Home" },
+					{ text: "Advanced topics", link: "/pages/Advanced-topics" },
+					{ text: "Commands", link: "/pages/Commands" },
 					{
 						text: "Compiling from source",
-						link: "/Stockfish.wiki/Compiling-from-source",
+						link: "/pages/Compiling-from-source",
 					},
-					{ text: "Developers", link: "/Stockfish.wiki/Developers" },
+					{ text: "Developers", link: "/pages/Developers" },
 					{
 						text: "Download and Usage",
-						link: "/Stockfish.wiki/Download-and-usage",
+						link: "/pages/Download-and-usage",
 					},
 					{
 						text: "Governance and responsibilities",
-						link: "/Stockfish.wiki/Governance-and-responsibilities",
+						link: "/pages/Governance-and-responsibilities",
 					},
 					{
 						text: "Regression Tests",
-						link: "/Stockfish.wiki/Regression-Tests",
+						link: "/pages/Regression-Tests",
 					},
-					{ text: "Stockfish FAQ", link: "/Stockfish.wiki/Stockfish-FAQ" },
-					{ text: "Terminology", link: "/Stockfish.wiki/Terminology" },
-					{ text: "Useful data", link: "/Stockfish.wiki/Useful-data" },
+					{ text: "Stockfish FAQ", link: "/pages/Stockfish-FAQ" },
+					{ text: "Terminology", link: "/pages/Terminology" },
+					{ text: "Useful data", link: "/pages/Useful-data" },
 				],
 			},
 		],
