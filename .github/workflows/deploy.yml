@@ -25,10 +25,8 @@ jobs:
 
       - name: Add outline to Markdown files
         run: |
-          find pages -type f -name '*.md' | while read -r file; do
-            echo -e "---\noutline: deep\n---\n$(cat "$file")" > "$file.temp"
-            mv "$file.temp" "$file"
-          done
+          find pages -name "*.md" -exec sed -i '1i\---\noutline: deep\n---\n\n' {} \;
+
 
       - run: npm ci
       - name: Build
