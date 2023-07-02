@@ -29,7 +29,7 @@ jobs:
 
       - name: Remove breaking fishtest files
         run: |
-          rm -rf pages-fishtest/A-developer's-guide-to-the-Stockfish-command-line.md
+          rm -rf "pages-fishtest/A-developer's-guide-to-the-Stockfish-command-line.md"
 
       - run: npm ci
       - name: Build
