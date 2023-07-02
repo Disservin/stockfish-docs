@@ -18,14 +18,12 @@ export default defineConfig({
 			provider: "local",
 		},
 		// https://vitepress.dev/reference/default-theme-config
-		nav: [
-			{ text: "Home", link: "/" },
-			{ text: "Docs", link: "/pages/Home" },
-		],
+		nav: [{ text: "Docs", link: "/pages/Home" }],
 
 		sidebar: [
 			{
 				text: "Stockfish",
+				link: "/pages/Home",
 				items: [
 					{ text: "Description", link: "/pages/Home" },
 					{ text: "Advanced topics", link: "/pages/Advanced-topics" },
