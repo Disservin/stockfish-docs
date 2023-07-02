@@ -14,9 +14,6 @@ export default defineConfig({
 	// cleanUrls: true,
 
 	themeConfig: {
-		editLink: {
-			pattern: "https://github.com/Disservin/stockfish-docs/edit/master/:path",
-		},
 		search: {
 			provider: "local",
 		},
