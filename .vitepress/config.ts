@@ -28,7 +28,7 @@ export default defineConfig({
 
 		sidebar: [
 			{
-				text: "Home",
+				text: "Stockfish",
 				items: [
 					{ text: "Description", link: "/pages/Home" },
 					{ text: "Advanced topics", link: "/pages/Advanced-topics" },
@@ -53,6 +53,47 @@ export default defineConfig({
 					{ text: "Stockfish FAQ", link: "/pages/Stockfish-FAQ" },
 					{ text: "Terminology", link: "/pages/Terminology" },
 					{ text: "Useful data", link: "/pages/Useful-data" },
+				],
+			},
+			{
+				text: "NNUE Pytorch",
+				items: [
+					{ text: "Documentation", link: "/pages-nnue/docs/nnue" },
+					{ text: "Feataures", link: "/pages-nnue/docs/features" },
+				],
+			},
+
+			{
+				text: "Fishtest",
+				items: [
+					{
+						text: "Creating a Test",
+						link: "/pages-fishtest/Creating-my-first-test",
+					},
+					{
+						text: "Running the worker",
+						link: "/pages-fishtest/Running-the-worker",
+					},
+					{
+						text: "Fishtest Server Setup",
+						link: "/pages-fishtest/Fishtest-server-setup",
+					},
+					{
+						text: "Advanced Topics",
+						link: "/pages-fishtest/Advanced-topics",
+					},
+					{
+						text: "Build Cutechess With Qt5 Static",
+						link: "/pages-fishtest/Build-cutechess-with-Qt5-static",
+					},
+					{
+						text: "Fishtest Mathematics",
+						link: "/pages-fishtest/Fishtest-mathematics",
+					},
+					{
+						text: "PGN files of games played on fishtest",
+						link: "/pages-fishtest/PGN-files-of-games-played-on-fishtest",
+					},
 				],
 			},
 		],

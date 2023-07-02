@@ -1,3 +1,9 @@
 [submodule "pages"]
 	path = pages
 	url = https://github.com/official-stockfish/Stockfish.wiki.git
+[submodule "pages-nnue"]
+	path = pages-nnue
+	url = https://github.com/glinscott/nnue-pytorch.git
+[submodule "pages-fishtest"]
+	path = pages-fishtest
+	url = https://github.com/glinscott/fishtest.wiki.git
