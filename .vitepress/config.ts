@@ -56,7 +56,7 @@ export default defineConfig({
 				text: "NNUE Pytorch",
 				items: [
 					{ text: "Documentation", link: "/pages-nnue/docs/nnue" },
-					{ text: "Feataures", link: "/pages-nnue/docs/features" },
+					{ text: "Features", link: "/pages-nnue/docs/features" },
 				],
 			},
 
