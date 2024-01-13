@@ -25,19 +25,19 @@ jobs:
 
       - name: Add outline to Markdown files
         run: |
-          find pages -name "*.md" -exec sed -i '1i\---\noutline: deep\n---\n\n' {} \;
+          find stockfish-wiki -name "*.md" -exec sed -i '1i\---\noutline: deep\n---\n\n' {} \;
 
       - name: Add outline to Markdown files
         run: |
-          find pages-fishtest -name "*.md" -exec sed -i '1i\---\noutline: deep\n---\n\n' {} \;
+          find fishtest-wiki -name "*.md" -exec sed -i '1i\---\noutline: deep\n---\n\n' {} \;
 
       - name: Add outline to Markdown files
         run: |
-          find pages-nnue -name "*.md" -exec sed -i '1i\---\noutline: deep\n---\n\n' {} \;
+          find nnue-pytorch-wiki -name "*.md" -exec sed -i '1i\---\noutline: deep\n---\n\n' {} \;
 
       - name: Remove breaking fishtest files
         run: |
-          rm -rf "pages-fishtest/A-developer's-guide-to-the-Stockfish-command-line.md"
+          rm -f "fishtest-wiki/A-developer's-guide-to-the-Stockfish-command-line.md"
 
       - run: npm ci
       - name: Build

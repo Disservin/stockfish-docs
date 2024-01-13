@@ -25,12 +25,12 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Docs", link: "/pages/Home" },
+      { text: "Docs", link: "/stockfish-wiki/Home" },
     ],
 
     sidebar: getSidebar({
       contentRoot: '/',
-      contentDirs: ['pages', 'pages-fishtest', 'pages-nnue'],
+      contentDirs: ['stockfish-wiki', 'fishtest-wiki', 'nnue-pytorch-wiki'],
       collapsible: true,
       collapsed: false
     }),
