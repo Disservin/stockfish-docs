@@ -3,40 +3,44 @@ import { getSidebar } from 'vitepress-plugin-auto-sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-	title: "Stockfish",
-	description: "Stockfish documentation",
+  title: "Stockfish",
+  description: "Stockfish documentation",
+  markdown: {
+    languageAlias: {
+      'cuda': 'c++'
+    }
+  },
+  base: "/stockfish-docs/",
 
-	base: "/stockfish-docs/",
+  ignoreDeadLinks: true,
 
-	ignoreDeadLinks: true,
+  lastUpdated: true,
 
-	lastUpdated: true,
+  // cleanUrls: true,
 
-	// cleanUrls: true,
+  themeConfig: {
+    search: {
+      provider: "local",
+    },
+    // https://vitepress.dev/reference/default-theme-config
+    nav: [
+      { text: "Home", link: "/" },
+      { text: "Docs", link: "/pages/Home" },
+    ],
 
-	themeConfig: {
-		search: {
-			provider: "local",
-		},
-		// https://vitepress.dev/reference/default-theme-config
-		nav: [
-			{ text: "Home", link: "/" },
-			{ text: "Docs", link: "/pages/Home" },
-		],
-
-    sidebar: getSidebar({ 
+    sidebar: getSidebar({
       contentRoot: '/',
       contentDirs: ['pages', 'pages-fishtest', 'pages-nnue'],
       collapsible: true,
-      collapsed: false 
+      collapsed: false
     }),
 
-		socialLinks: [
-			{
-				icon: "github",
-				link: "https://github.com/official-stockfish/Stockfish",
-			},
-		],
-	},
-	vite: {},
+    socialLinks: [
+      {
+        icon: "github",
+        link: "https://github.com/official-stockfish/Stockfish",
+      },
+    ],
+  },
+  vite: {},
 });
