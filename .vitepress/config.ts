@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { getSidebar } from 'vitepress-plugin-auto-sidebar'
+import { getSidebar } from "vitepress-plugin-auto-sidebar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,10 +7,10 @@ export default defineConfig({
   description: "Stockfish documentation",
   markdown: {
     languageAlias: {
-      'cuda': 'c++'
-    }
+      cuda: "c++",
+    },
   },
-  base: "/stockfish-docs/",
+  base: "/docs/",
 
   ignoreDeadLinks: true,
 
@@ -29,10 +29,10 @@ export default defineConfig({
     ],
 
     sidebar: getSidebar({
-      contentRoot: '/',
-      contentDirs: ['stockfish-wiki', 'fishtest-wiki', 'nnue-pytorch-wiki'],
+      contentRoot: "/",
+      contentDirs: ["stockfish-wiki", "fishtest-wiki", "nnue-pytorch-wiki"],
       collapsible: true,
-      collapsed: false
+      collapsed: false,
     }),
 
     socialLinks: [
