@@ -10,6 +10,12 @@ hero:
     - theme: brand
       text: FAQ
       link: /stockfish-wiki/Stockfish-FAQ
+    - theme: alt
+      text: Download
+      link: https://stockfishchess.org/download/
+    - theme: alt
+      text: View on Github
+      link: https://github.com/official-stockfish/Stockfish
 features:
   - title: Latest Dev Builds
     details: Click here to get to the latest dev builds
