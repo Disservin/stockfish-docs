@@ -1,0 +1,13 @@
+:root {
+    --vp-c-indigo-1: #18794e; /* Changed blue to green */
+    --vp-c-indigo-2: #299764; /* Changed blue to green */
+    --vp-c-indigo-3: #30a46c; /* Changed blue to green */
+    --vp-c-indigo-soft: rgba(16, 185, 129, 0.14); /* Changed blue to green */
+  }
+  
+  .dark {
+    --vp-c-indigo-1: #3dd68c; /* Changed blue to green */
+    --vp-c-indigo-2: #30a46c; /* Changed blue to green */
+    --vp-c-indigo-3: #298459; /* Changed blue to green */
+    --vp-c-indigo-soft: rgba(16, 185, 129, 0.16); /* Changed blue to green */
+  }
