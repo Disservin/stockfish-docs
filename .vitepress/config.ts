@@ -30,6 +30,7 @@ export default defineConfig({
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "en" }],
     ["meta", { name: "og:site_name", content: "Stockfish documentation" }],
+    ["link", { rel: "icon", href: "/docs/favicon.ico" }],
   ],
 
   themeConfig: {
